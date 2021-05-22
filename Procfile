@@ -1,1 +1,1 @@
-gunicorn --worker-class eventlet -w 1 app:app
+uwsgi --http :5000 --wsgi-file hello.py --master --processes 4 --threads 2
