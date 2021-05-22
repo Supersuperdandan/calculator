@@ -1,1 +1,1 @@
-web: gunicorn --worker-class eventlet -w 1 CALCULATOR-WEB-APP:app
+web: gunicorn: --worker-class eventlet -w 1 CALCULATOR-WEB-APP:app
