@@ -5,7 +5,7 @@ import Input from './Components/Input/Input';
 import CalculationLogs from './Components/CalculationLogs/CalculationLogs';
 import 'bootstrap/dist/css/bootstrap.css';
 
-const socket = io("ec2-18-191-169-184.us-east-2.compute.amazonaws.com");
+const socket = io("ec2-18-191-169-184.us-east-2.compute.amazonaws.com:5000");
 
 function App() {
     const [logs, setLogs] = useState(["Not connect to server."]);
