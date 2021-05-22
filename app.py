@@ -7,6 +7,10 @@ socketio = SocketIO(app, cors_allowed_origins='*')
 
 logs = []
 
+@app.route('/ping')
+def ping():
+    socketio.emit('ping event', {'data': 42}, namespace='/chat')
+
 @socketio.on('connect')
 def connect():
 	print("New client connected! Update calculation logs.")
@@ -26,4 +30,4 @@ def disconnect():
 	print("Client disconnected")
 
 if __name__ == '__main__':
-	socketio.run(app, debug = True)
+	socketio.run(app, host='localhost', port=5000, debug = True)
