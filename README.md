@@ -1,4 +1,4 @@
-# React FrontEnd + Python Flask BackEnd + AWS Deployment
+# React FrontEnd + Python Flask BackEnd + Heroku Deployment
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
